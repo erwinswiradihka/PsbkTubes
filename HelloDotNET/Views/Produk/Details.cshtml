@@ -1,0 +1,43 @@
+﻿@model HelloDotNET.Produk
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Produk</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id_Produk)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id_Produk)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nama_produk)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nama_produk)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Harga)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Harga)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Spek)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Spek)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

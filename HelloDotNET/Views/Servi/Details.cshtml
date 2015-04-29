@@ -1,0 +1,50 @@
+﻿@model HelloDotNET.Servi
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Servi</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id_Service)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id_Service)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Tanggal_Pembelian)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tanggal_Pembelian)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nama_produk)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nama_produk)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Status_Service)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Status_Service)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Username)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

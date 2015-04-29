@@ -1,0 +1,52 @@
+﻿@model HelloDotNET.Login
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Login</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id_User)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id_User)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Username)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Kunci)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kunci)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Firstname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Firstname)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.lastname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lastname)
+    </div>
+
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

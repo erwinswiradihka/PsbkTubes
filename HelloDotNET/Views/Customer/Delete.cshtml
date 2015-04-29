@@ -1,0 +1,54 @@
+﻿@model HelloDotNET.Login
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h3>Are you sure you want to delete this?</h3>
+
+    <legend>Login</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id_User)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id_User)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Username)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Kunci)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kunci)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Firstname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Firstname)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.lastname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lastname)
+    </div>
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

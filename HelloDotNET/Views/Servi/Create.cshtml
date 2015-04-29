@@ -1,0 +1,53 @@
+﻿@model HelloDotNET.Servi
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Servi</legend>
+
+        
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Tanggal_Pembelian)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Tanggal_Pembelian)
+            @Html.ValidationMessageFor(model => model.Tanggal_Pembelian)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nama_produk)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nama_produk)
+            @Html.ValidationMessageFor(model => model.Nama_produk)
+        </div>
+
+       
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Username)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Username)
+            @Html.ValidationMessageFor(model => model.Username)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
