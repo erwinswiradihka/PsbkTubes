@@ -114,8 +114,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AfterLoginController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HelloController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProdukController.cs" />
     <Compile Include="Controllers\ServiController.cs" />
     <Compile Include="Global.asax.cs">
@@ -139,6 +142,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Pengiriman.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -194,7 +198,9 @@
     <Content Include="Style\uikit.gradient.css" />
     <Content Include="Style\uikit.gradient.min.css" />
     <Content Include="Style\uikit.min.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -205,7 +211,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -226,16 +231,10 @@
     <Content Include="Views\Hello\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Hello\Service.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Hello\Event.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Hello\About_Us.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\AfterLogin\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\AdminLayout.cshtml" />
@@ -274,25 +273,7 @@
     <Content Include="Views\Customer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Customer\Details.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Customer\Create.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Customer\Edit.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Customer\Delete.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Customer\RegisterCustomer.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Customer\Index1.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Customer\naon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Model1.edmx">
@@ -329,6 +310,75 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Servi\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\About_Us.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\Admin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\Event.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\HomeAdmin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\LoginCustomer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\Product.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\RegisterCustomer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\Service.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Admin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\RegisterCustomer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AfterLogin\Order.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Login\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Customer\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\LoginAdmin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Servi\Servic.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Customer\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Customer\Edit.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

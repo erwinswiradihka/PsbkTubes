@@ -1,0 +1,74 @@
+﻿@model IEnumerable<HelloDotNET.Servi>
+
+@{
+    ViewBag.Title = "View1";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<body>
+    <div class="tes">
+        <div class="logo">
+            <img src="../img/4speedcode-logo.png" width="115" height="120" alt="logo">
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+        <nav class="uk-navbar uk-margin-large-bottom navbar">
+
+            <a class="uk-navbar-brand uk-hidden-small" href="@Url.Action("Index", "AfterLogin")">Home</a>
+            <ul class="uk-navbar-nav uk-hidden-small">
+                <li>
+                    <a href="@Url.Action("Product", "AfterLogin")">Product</a>
+                </li>
+                <li class="uk-active">
+                    <a href="@Url.Action("Create", "Servi")">Service</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("About_Us", "AfterLogin")">About Us</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Hello")">Logout</a>
+                </li>
+            </ul>
+            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Home</div>
+        </nav>
+
+        <h2>Status Service yang sedang di kerjakan</h2>
+
+
+
+        <table class="uk-table uk-table-middle">
+            <tr>
+                <th>
+                    User Name
+                </th>
+                <th>
+                    Nama Produk
+                </th>
+                <th>
+                    Status Service
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Username)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nama_produk)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status_Service)
+                    </td>
+
+
+                </tr>
+            }
+
+        </table>

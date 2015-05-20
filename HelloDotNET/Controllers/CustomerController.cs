@@ -20,7 +20,33 @@ namespace HelloDotNET.Controllers
             return View(db.Logins.ToList());
         }
 
-      
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(Login u)
+        {
+
+            // this action is for handle post (login)
+            if (ModelState.IsValid) // this is check validity
+            {
+
+                using (CrmAppleEntities dc = new CrmAppleEntities())
+                {
+                    var v = dc.Logins.Where(a => a.Username.Equals(u.Username) && a.Kunci.Equals(u.Kunci)).FirstOrDefault();
+                    if (v != null)
+                    {
+                        Session["LogedUserID"] = v.Id_User.ToString();
+                        Session["LogedUserFullname"] = v.Username.ToString();
+                        return RedirectToAction("Index","AfterLogin");
+                    }
+                }
+            }
+            return View(u);
+        }
 
         //
         // GET: /Customer/Details/5
@@ -79,7 +105,7 @@ namespace HelloDotNET.Controllers
             {
                 db.Logins.Add(login);
                 db.SaveChanges();
-                return RedirectToAction("Index1", "Customer");
+                return RedirectToAction("Login", "Customer");
             }
 
             return View(login);

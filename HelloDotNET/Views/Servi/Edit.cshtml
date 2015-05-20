@@ -2,9 +2,10 @@
 
 @{
     ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<h2>Edit</h2>
+<h2>Edit Service</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
@@ -60,5 +61,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    <a class="uk-button uk-button-primary" @Html.ActionLink("Back to List", "Index")
 </div>

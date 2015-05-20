@@ -1,21 +1,79 @@
-﻿body {
+﻿
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+
+body {
     background:white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.tes {
-    background-color:#949494;
+.header {
+    background-color:#CBD7DB;
     width:100%;
     height:110px;
     text-align:center;
     padding-top:10px;
-    margin-bottom : -15px;
+    margin-bottom : -20px;
+
 }
 
-.header {
-  width: 8%;
-  margin-top: -73px;
-  margin-left: 30px;
+.logo {
+  width: 110px;
+  margin-top: -8px;
+  margin-left: 10px;
 }
+
+.bannerslide{
+      margin-top: 50px !important;
+}
+
+
+
+.menu  li{
+	display: inline-block;
+	padding: 20px 30px;
+}
+.menu  li a{
+	display: block;
+	color: #808080;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+.menu  li.active a,.menu  li a:hover{
+	color: #FFA0A0;
+}
+
+.h_nav h4{
+	border-bottom:1px solid rgb(236, 236, 236);
+	font-size: 1.3em;
+	color: #7D97A3;
+	line-height: 1.8em;
+	text-transform:capitalize;
+	margin-bottom: 4%;
+}
+.h_nav h4.top{
+	margin-top: 12%;
+}
+.h_nav ul li{
+	display: block;
+}
+.h_nav ul li a{
+	display:block;
+	font-size: 0.85em;
+	color:#777;
+	text-transform:capitalize;
+	line-height:2em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.h_nav ul li a:hover{
+	color:#00405d;
+	text-decoration:underline;
+} 
+
+
 
 .kon{
     height:300px;
@@ -55,6 +113,11 @@
 
 .nav {
     margin-left : 400px;
+
+}
+
+.navfixed{
+    position: fixed;
 }
 
 .login {
@@ -88,10 +151,53 @@
     width :200px;
 }
 
+.tes {
+    background-color:#949494;
+    width:100%;
+    height:110px;
+    text-align:center;
+    padding-top:10px;
+    margin-bottom : -15px;
+}
+
 .navbar{
   background: #FFFFFF;
   color: #5F1010;
   border: 0px solid white;
-  margin-top: 1px;
+  width: 119%;
+  margin-left: -109px;
+
 }
 
+.navbartext li{
+      margin-left: 35px !important;
+                 
+}
+
+.imgdetail img{
+      width: 570px;
+}
+
+
+.about{
+    margin-top: 20px;
+    font-family: 'Myriad Pro';
+  
+}
+
+.about h1{
+    font-family: 'Myriad Pro';
+}
+
+
+
+.banneripod {
+    padding-top: 300px;
+    position:absolute;
+    z-index:999999;
+}
+
+.lihat {
+    margin-left:77px;
+    margin-top: -45px;
+}

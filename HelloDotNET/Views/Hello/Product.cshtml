@@ -9,581 +9,895 @@
    <body>
 
     <div class="tes">
-
-    </div>
-
-
-
-    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-
-        <nav class="uk-navbar uk-margin-large-bottom navbar">
-
-            <a class="uk-navbar-brand uk-hidden-small" href="@Url.Action("Index", "Hello")">Home</a>
-            <ul class="uk-navbar-nav uk-hidden-small">
-                <li class="uk-active">
-                    <a href="@Url.Action("Product", "Hello")">Product</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("Service", "Hello")">Service</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("Event", "Hello")">Event</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("About_Us", "Hello")">About Us</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("LoginCustomer", "Hello")">Login</a>
-                </li>
-            </ul>
-            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
-            <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Home</div>
-        </nav>
-
-        <div class="uk-grid" data-uk-grid-margin="">
-            <div class="uk-width-1-1">
-                <h1 class="uk-heading-large">Product</h1>
-            </div>
-        </div>
-
-        <div class="uk-grid" data-uk-grid-margin="">
-            <div class="uk-width-1-1">
-
-                @*<ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#switcher-content'}">
-                    <li class=""><a href="#">All</a></li>
-                    <li class=""><a href="#">iPhone</a></li>
-                    <li class=""><a href="#">Macbook</a></li>
-                </ul>*@
-
-
-                <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#subnav-pill-content'}">
-                    <li class="uk-active"><a href="#">All</a></li>
-                    <li class=""><a href="#">iPhone</a></li>
-                    <li class=""><a href="#">Macbook</a></li>
-                </ul>
-
-                <ul id="subnav-pill-content" class="uk-switcher">
-
-                    @*all item*@
-                    <li class="uk-active">
-                      <div class="uk-overlay overlay" id="#1">
-                         <img src="../img/iPhone/color_blue.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                   
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#satu'}">Detail</button>
-                                  
-                                    </div>
-                                </div>
-                        </div>
-                        <div id="satu" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                               tes 123
-                            </div>
-                        </div>
-
-
-
-                        <div class="uk-overlay overlay" id="#2">
-                            <img src="../img/iPhone/color_gold.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#dua'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="dua" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                <p>ieu teh dua</p>  
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_gray.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#tiga'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="tiga" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_green.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#empat'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="empat" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_pink.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#lima'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="lima" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_yellow.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#enam'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="enam" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_silver.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5S</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#tujuh'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="tujuh" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_white.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#delapan'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="delapan" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/overview_wireless_hero_enhanced.png" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>Macbook Air</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#Mac-1'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="Mac-1" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/hero (1).jpg" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iMac</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#Mac-2'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="Mac-2" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/overview_osx_hero.jpg" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>Macbook Air</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#Mac-3'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="Mac-3" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/overview_hero_hero.jpg" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>Macbook Air</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#Mac-4'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="Mac-4" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/hero (1).png" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iMac</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#Mac-5'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="Mac-5" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/hero (4).jpg" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iMac</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#Mac-6'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="Mac-6" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                    </li>
-                    @*end all item*@
-
-                    @*item iphone*@
-                    <li class="">
-                        <div class="uk-overlay overlay" id="#1">
-                            <img src="../img/iPhone/color_blue.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div id="my-id" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_gold.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_gray.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_green.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_pink.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_yellow.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_silver.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5S</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/iPhone/color_white.jpg" width="120" height="120" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iPhone 5C</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                    </li>
-                    @*end item iphone*@
-                    <li class="">
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/overview_wireless_hero_enhanced.png" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>Macbook Air</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id2'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id2" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/hero (1).jpg" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iMac</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id2'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id2" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/overview_osx_hero.jpg" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>Macbook Air</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id2'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id2" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/overview_hero_hero.jpg" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>Macbook Air</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id2'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id2" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/hero (1).png" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iMac</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id2'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id2" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                        <div class="uk-overlay overlay">
-                            <img src="../img/macbook/hero (4).jpg" width="300" height="300" alt="">
-                            <div class="uk-overlay-area">
-                                <div class="uk-overlay-area-content">
-                                    <p>iMac</p>
-                                    <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id2'}">Detail</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="my-id2" class="uk-modal">
-                            <div class="uk-modal-dialog">
-                                <a class="uk-modal-close uk-close"></a>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-
-                    </li>
-                </ul>
-
-                               
-
-    <div id="offcanvas" class="uk-offcanvas">
-        <div class="uk-offcanvas-bar">
-            <ul class="uk-nav uk-nav-offcanvas">
-                <li class="uk-active">
-                    <a href="@Url.Action("Product", "Hello")">Product</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("Service", "Hello")">Service</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("Event", "Hello")">Event</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("About_Us", "Hello")">About Us</a>
-                </li>
-                <li>
-                    <a href="@Url.Action("LoginCustomer", "Hello")">Login</a>
-                </li>
-            </ul>
+        <div class="logo">
+            <img src="../img/4speedcode-logo.png" width="115" height="120" alt="logo">
         </div>
     </div>
 
 
-    <div class="uk-tooltip"></div>
+
+       <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+           <nav class="uk-navbar uk-margin-large-bottom navbar">
+
+               <a class="uk-navbar-brand uk-hidden-small" href="@Url.Action("Index", "Hello")">Home</a>
+               <ul class="uk-navbar-nav uk-hidden-small">
+                   <li>
+                       <a href="@Url.Action("Product", "Hello")">Product</a>
+                   </li>
+                   <li>
+                       <a href="@Url.Action("About_Us", "Hello")">About Us</a>
+                   </li>
+                   <li>
+                       <a href="@Url.Action("Login", "Customer")">Login</a>
+                   </li>
+               </ul>
+               <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+               <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Home</div>
+           </nav>
+
+           <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+               <div class="uk-grid" data-uk-grid-margin="">
+                   <div class="uk-width-1-1">
+                       <h1 class="uk-heading-large">Product</h1>
+                   </div>
+               </div>
+
+               <div class="uk-grid" data-uk-grid-margin="">
+                   <div class="uk-width-1-1">
+
+                       <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="{connect:'#subnav-pill-content'}">
+                           <li class="uk-active"><a href="#">All</a></li>
+                           <li class=""><a href="#">iPhone</a></li>
+                           <li class=""><a href="#">iPod</a></li>
+                       </ul>
+
+
+                       <ul id="subnav-pill-content" class="uk-switcher">
+
+                           @*all item*@
+                           <li class="uk-active">
+                               <div class="uk-overlay overlay" id="#1">
+                                   <img src="../img/iPhone5c/color_blue.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
+
+                                       </div>
+
+                                   </div>
+                               </div>
+
+                               <div id="my-id" class="uk-modal">
+                                   <div class="uk-modal-dialog imgdetail">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       <img src="../img/iphone5c/colordetails5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/pricedetail.png" alt="Detail">
+                                       <br />
+                                       <a href="@Url.Action("Login", "Customer")"><button class="uk-button uk-button-primary">Order</button></a>
+                                       <br />
+                                       <img src="../img/iphone5c/weightdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/chip5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/cellulardetail.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/locationdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/displaydetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/cameradetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/videodetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/vidcalldetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/audiocalldetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/audiopbdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/tvandviddetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/siridetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/exbuttondetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/powerdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/sensordetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/osdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/builtappdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/freeappsdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/headphonesdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/simdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/connectordetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/ratedetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/maildetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/sysreqdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/environtreqdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/languagedetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/inboxdetail5c.png" alt="Detail">
+                                       <br />
+
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5/color_gold.jpg" width="130" height="130" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5S</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#2'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="2" class="uk-modal">
+                                   <div class="uk-modal-dialog imgdetail">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       <img src="../img/iphone5/colordetail5s.png" alt="Detail">
+                                       <br />
+                                       <a href="@Url.Action("Login", "Customer")"><button class="uk-button uk-button-primary">Order</button></a>
+                                       <br />
+                                       <img src="../img/iphone5/pricedetail.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/weightdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/chipdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/cellulardetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/locationdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/displaydetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/isightcameradetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/vidrecdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/vidcalldetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/audiocalldetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/tvdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/siridetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/exbuttondetal5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/powerdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/sensordetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/osdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/appdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/freeappsdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/headphonedetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/simcarddetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/connectordetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/ratehearingdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/maildetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/sysreqdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/environtreqdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/languagedetail.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/inboxdetail5s.png" alt="Detail">
+                                       <br />
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5/color_gray.jpg" width="130" height="130" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5S</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#2'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id" class="uk-modal">
+                                   <div class="uk-modal-dialog imgdetail">
+                                       <a class="uk-modal-close uk-close"></a>
+
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone/color_green.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone/color_pink.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone/color_yellow.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5/color_silver.jpg" width="130" height="130" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5S</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#2'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5c/color_white.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+                               @*iPod*@
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/ipod/ipodgrey.jpg" width="100" height="100" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPod Touch</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id4'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id4" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       <img src="../img/ipod/22.jpg" alt="Detail">
+                                       <br />
+                                       <a href="@Url.Action("Login", "Customer")"><button class="uk-button uk-button-primary">Order</button></a>
+                                       <br />
+                                       <img src="../img/ipod/2.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/4.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/5.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/6.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/7.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/8.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/9.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/10.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/11.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/12.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/13.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/14.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/15.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/16.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/17.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/18.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/languagedetailipod.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/ipod/19.png" alt="Detail">
+                                       <br />
+
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/ipod/ipodsilver.jpg" width="100" height="100" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPod Touch</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id4'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id2" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/ipod/ipodblue.jpg" width="100" height="100" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPod Touch</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id4'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id4" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/ipod/ipodyellow.jpg" width="100" height="100" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPod Touch</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id4'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id4" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/ipod/ipodpink.jpg" width="100" height="100" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPod</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id4'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id4" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                   </div>
+                               </div>
+
+
+                           </li>
+                           @*end all item*@
+
+                           @*item iphone*@
+                           <li class="uk-active">
+                               <div class="uk-overlay overlay" id="#1">
+                                   <img src="../img/iPhone5c/color_blue.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id3'}">Detail</button>
+
+                                       </div>
+
+                                   </div>
+                               </div>
+
+                               <div id="my-id3" class="uk-modal">
+                                   <div class="uk-modal-dialog imgdetail">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       <img src="../img/iphone5c/colordetails5c.png" alt="Detail">
+                                       <br />
+                                       <a href="@Url.Action("Login", "Customer")"><button class="uk-button uk-button-primary">Order</button></a>
+                                       <br />
+                                       <img src="../img/iphone5c/pricedetail.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/weightdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/chip5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/cellulardetail.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/locationdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/displaydetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/cameradetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/videodetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/vidcalldetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/audiocalldetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/audiopbdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/tvandviddetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/siridetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/exbuttondetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/powerdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/sensordetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/osdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/builtappdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/freeappsdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/headphonesdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/simdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/connectordetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/ratedetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/maildetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/sysreqdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/environtreqdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/languagedetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5c/inboxdetail5c.png" alt="Detail">
+                                       <br />
+
+                                   </div>
+                               </div>
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5/color_gold.jpg" width="130" height="130" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5S</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id5'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id5" class="uk-modal">
+                                   <div class="uk-modal-dialog imgdetail">
+                                       <a class="uk-modal-close uk-close"></a>
+                                       <img src="../img/iphone5/colordetail5s.png" alt="Detail">
+                                       <br />
+                                       <a href="@Url.Action("Login", "Customer")"><button class="uk-button uk-button-primary">Order</button></a>
+                                       <br />
+                                       <img src="../img/iphone5/pricedetail.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/weightdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/chipdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/cellulardetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/locationdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/displaydetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/isightcameradetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/vidrecdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/vidcalldetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/audiocalldetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/tvdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/siridetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/exbuttondetal5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/powerdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/sensordetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/osdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/appdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/freeappsdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/headphonedetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/simcarddetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/connectordetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/ratehearingdetail5s.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/maildetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/sysreqdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/environtreqdetail5c.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/languagedetail.png" alt="Detail">
+                                       <br />
+                                       <img src="../img/iphone5/inboxdetail5s.png" alt="Detail">
+                                       <br />
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5/color_gray.jpg" width="130" height="130" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5S</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id5'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id5" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5c/color_green.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id3'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id3" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5c/color_pink.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id3'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id3" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5c/color_yellow.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id3'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id3" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5/color_silver.jpg" width="130" height="130" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5S</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id5'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id5" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+
+                                   </div>
+                               </div>
+
+                               <div class="uk-overlay overlay">
+                                   <img src="../img/iPhone5c/color_white.jpg" width="120" height="120" alt="">
+                                   <div class="uk-overlay-area">
+                                       <div class="uk-overlay-area-content">
+                                           <p>iPhone 5C</p>
+                                           <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id3'}">Detail</button>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div id="my-id3" class="uk-modal">
+                                   <div class="uk-modal-dialog">
+                                       <a class="uk-modal-close uk-close"></a>
+
+                                   </div>
+                               </div>
+
+                           </li>
+                           @*end item iphone*@
+
+                           @*ipod*@
+                           <li class="uk-active">
+
+                               <!-- start slider -->
+                               <div id="fwslider">
+                                   <div class="slider_container bannerslide">
+                                       <div class="slide sliderpos">
+                                           <!-- Slide image -->
+                                           <img src="../img/banner3.jpg" alt="" />
+                                           <!-- /Slide image -->
+                                           <!-- Texts container -->
+                                           <div class="slide_content">
+                                               <div class="slide_content_wrap">
+                                                   <!-- Text title -->
+                                                   <h4 class="title">iPod</h4>
+                                                   <!-- /Text title -->
+                                                   <!-- Text description -->
+                                                   <p class="description">Colour Your Day <br /><br /> with a music</p>
+                                                   <!-- /Text description -->
+                                               </div>
+                                           </div>
+                                           <!-- /Texts container -->
+                                       </div>
+                                       <div class="slide">
+                                           <img src="../img/banner1.jpg" alt="" />
+                                           <div class="slide_content">
+                                               <div class="slide_content_wrap">
+                                                   <h4 class="title">Choose Your Colour </h4>
+                                                   <p class="description">With iPhone 5c</p>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <!--/slide -->
+                                   </div>
+                                   <div class="timers"></div>
+                                   <div class="slidePrev"><span></span></div>
+                                   <div class="slideNext"><span></span></div>
+                               </div>
+                               <!--/slider -->
+
+                               <br />
+                               <div class="uk-margin-large-top banneripod">
+                                   <div class="uk-overlay overlay">
+                                       <img src="../img/ipod/ipodgrey.jpg" width="100" height="100" alt="">
+                                       <div class="uk-overlay-area">
+                                           <div class="uk-overlay-area-content">
+                                               <p>iPod Touch</p>
+                                               <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id6'}">Detail</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div id="my-id6" class="uk-modal">
+                                       <div class="uk-modal-dialog">
+                                           <a class="uk-modal-close uk-close"></a>
+                                           <img src="../img/ipod/22.jpg" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/2.png" alt="Detail">
+                                           <br />
+                                           <a href="@Url.Action("Login", "Customer")"><button class="uk-button uk-button-primary">Order</button></a>
+                                           <br />
+                                           <img src="../img/ipod/4.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/5.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/6.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/7.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/8.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/9.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/10.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/11.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/12.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/13.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/14.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/15.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/16.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/17.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/18.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/languagedetailipod.png" alt="Detail">
+                                           <br />
+                                           <img src="../img/ipod/19.png" alt="Detail">
+                                           <br />
+                                       </div>
+                                   </div>
+
+                                   <div class="uk-overlay overlay">
+                                       <img src="../img/ipod/ipodsilver.jpg" width="100" height="100" alt="">
+                                       <div class="uk-overlay-area">
+                                           <div class="uk-overlay-area-content">
+                                               <p>iPod Touch</p>
+                                               <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id6'}">Detail</button>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                   <div id="my-id6" class="uk-modal">
+                                       <div class="uk-modal-dialog">
+                                           <a class="uk-modal-close uk-close"></a>
+
+                                       </div>
+                                   </div>
+
+                                   <div class="uk-overlay overlay">
+                                       <img src="../img/ipod/ipodblue.jpg" width="100" height="100" alt="">
+                                       <div class="uk-overlay-area">
+                                           <div class="uk-overlay-area-content">
+                                               <p>iPod Touch</p>
+                                               <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id6'}">Detail</button>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                   <div id="my-id6" class="uk-modal">
+                                       <div class="uk-modal-dialog">
+                                           <a class="uk-modal-close uk-close"></a>
+
+                                       </div>
+                                   </div>
+
+                                   <div class="uk-overlay overlay">
+                                       <img src="../img/ipod/ipodyellow.jpg" width="100" height="100" alt="">
+                                       <div class="uk-overlay-area">
+                                           <div class="uk-overlay-area-content">
+                                               <p>iPod Touch</p>
+                                               <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id6'}">Detail</button>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                   <div id="my-id6" class="uk-modal">
+                                       <div class="uk-modal-dialog">
+                                           <a class="uk-modal-close uk-close"></a>
+
+                                       </div>
+                                   </div>
+
+                                   <div class="uk-overlay overlay">
+                                       <img src="../img/ipod/ipodpink.jpg" width="100" height="100" alt="">
+                                       <div class="uk-overlay-area">
+                                           <div class="uk-overlay-area-content">
+                                               <p>iPod Touch</p>
+                                               <button class="uk-button uk-button-primary" data-uk-modal="{target:'#my-id6'}">Detail</button>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                   <div id="my-id6" class="uk-modal">
+                                       <div class="uk-modal-dialog">
+                                           <a class="uk-modal-close uk-close"></a>
+
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+
+
+                           </li>
+                       </ul>
+
+
+                       <div id="offcanvas" class="uk-offcanvas">
+                           <div class="uk-offcanvas-bar">
+                               <ul class="uk-nav uk-nav-offcanvas">
+                                   <li class="uk-active">
+                                       <a href="@Url.Action("Product", "Hello")">Product</a>
+                                   </li>
+                                   <li>
+                                       <a href="@Url.Action("Service", "Hello")">Service</a>
+                                   </li>
+                                   <li>
+                                       <a href="@Url.Action("Event", "Hello")">Event</a>
+                                   </li>
+                                   <li>
+                                       <a href="@Url.Action("About_Us", "Hello")">About Us</a>
+                                   </li>
+                                   <li>
+                                       <a href="@Url.Action("LoginCustomer", "Hello")">Login</a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+
+                       <div class="uk-tooltip"></div>
 </body>
 </html>

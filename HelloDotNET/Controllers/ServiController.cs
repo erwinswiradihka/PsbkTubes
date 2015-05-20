@@ -20,6 +20,9 @@ namespace HelloDotNET.Controllers
             return View(db.Servis.ToList());
         }
 
+      
+        
+
         //
         // GET: /Servi/Details/5
 
@@ -35,10 +38,13 @@ namespace HelloDotNET.Controllers
 
         //
         // GET: /Servi/Create
+       
+       
 
         public ActionResult Create()
         {
             return View();
+            
         }
 
         //
@@ -54,7 +60,7 @@ namespace HelloDotNET.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
+           
             return View(servi);
         }
 
@@ -89,7 +95,10 @@ namespace HelloDotNET.Controllers
 
         //
         // GET: /Servi/Delete/5
-
+        public ActionResult Servic()
+        {
+            return View(db.Servis.ToList());
+        }
         public ActionResult Delete(int id = 0)
         {
             Servi servi = db.Servis.Find(id);

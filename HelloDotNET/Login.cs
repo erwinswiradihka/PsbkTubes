@@ -11,13 +11,19 @@ namespace HelloDotNET
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
     
     public partial class Login
     {
         public int Id_User { get; set; }
+         [Required(ErrorMessage = "Username harus diisi !!!", AllowEmptyStrings = false)]
         public string Username { get; set; }
+        [Required(ErrorMessage = "Password harus diisi !!!", AllowEmptyStrings = false)]       
         public string Kunci { get; set; }
+  
         public string Firstname { get; set; }
+        
         public string lastname { get; set; }
     }
 }

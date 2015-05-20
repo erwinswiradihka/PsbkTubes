@@ -1,0 +1,46 @@
+﻿@model HelloDotNET.Login
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    //this  is for create form tag
+    @Html.AntiForgeryToken()          // this is for prevent CSRF attack
+                                    @Html.ValidationSummary(true)
+    if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red">
+            @ViewBag.Message
+        </div>
+    }
+    <table>
+        <tr>
+            <td>@Html.LabelFor(a => a.Username)</td>
+            <td>@Html.TextBoxFor(a => a.Username)</td>
+            <td>@Html.ValidationMessageFor(a => a.Username)</td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(a => a.Kunci)
+            </td>
+            <td>
+                @Html.PasswordFor(a => a.Kunci)
+            </td>
+            <td>
+                @Html.ValidationMessageFor(a => a.Kunci)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Login" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
+}

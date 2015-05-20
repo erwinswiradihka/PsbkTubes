@@ -1,5 +1,6 @@
 ﻿@model HelloDotNET.Login
 
+
 @{
     ViewBag.Title = "Edit";
 }
@@ -11,49 +12,42 @@
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Login</legend>
+        <legend>Produk</legend>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Id_User)
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Id_User)
         </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Id_User)
-            @Html.ValidationMessageFor(model => model.Id_User)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Username)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Username)
-            @Html.ValidationMessageFor(model => model.Username)
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Id_User)
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Kunci)
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Username)
         </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Kunci)
-            @Html.ValidationMessageFor(model => model.Kunci)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Firstname)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Firstname)
-            @Html.ValidationMessageFor(model => model.Firstname)
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Username)
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.lastname)
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Kunci)
         </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.lastname)
-            @Html.ValidationMessageFor(model => model.lastname)
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Kunci)
         </div>
 
-        
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Firstname)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Firstname)
+        </div>
+
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.lastname)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.lastname)
+        </div>
 
         <p>
             <input type="submit" value="Save" />

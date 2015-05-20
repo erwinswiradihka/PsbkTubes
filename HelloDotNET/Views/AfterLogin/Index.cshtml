@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<body>
+
+    <div class="tes">
+        <div class="logo">
+            <img src="../img/4speedcode-logo.png" width="115" height="120" alt="logo">
+        </div>
+        </div>
+
+
+
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+        <nav class="uk-navbar uk-margin-large-bottom navbar">
+
+            <a class="uk-navbar-brand uk-hidden-small" href="@Url.Action("Index", "AfterLogin")">Home</a>
+            <ul class="uk-navbar-nav uk-hidden-small">
+                <li>
+                    <a href="@Url.Action("Product", "AfterLogin")">Product</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Create", "Servi")">Service</a>
+                </li>
+               
+                <li>
+                    <a href="@Url.Action("About_Us", "Hello")">About Us</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Hello")">Logout</a>
+                </li>
+            </ul>
+            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Home</div>
+        </nav>
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+            <!-- start slider -->
+            <div id="fwslider">
+                <div class="slider_container bannerslide">
+                    <div class="slide">
+                        <!-- Slide image -->
+                        <img src="../img/banner3.jpg" alt="" />
+                        <!-- /Slide image -->
+                        <!-- Texts container -->
+                        <div class="slide_content">
+                            <div class="slide_content_wrap">
+                                <!-- Text title -->
+                                <h4 class="title">iMac</h4>
+                                <!-- /Text title -->
+                                <!-- Text description -->
+                                <p class="description">Experience Your Imagination <br /><br /> with apple product</p>
+                                <!-- /Text description -->
+                            </div>
+                        </div>
+                        <!-- /Texts container -->
+                    </div>
+                    <div class="slide">
+                        <img src="../img/banner1.jpg" alt="" />
+                        <div class="slide_content">
+                            <div class="slide_content_wrap">
+                                <h4 class="title">Choose Your Colour </h4>
+                                <p class="description">With iPhone 5c</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/slide -->
+                </div>
+                <div class="timers"></div>
+                <div class="slidePrev"><span></span></div>
+                <div class="slideNext"><span></span></div>
+            </div>
+            <!--/slider -->
+
+
+            <div id="offcanvas" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav uk-nav-offcanvas">
+                        <li>
+                            <a href="@Url.Action("Product", "Hello")">Product</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Service", "Hello")">Service</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Event", "Hello")">Event</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("About_Us", "Hello")">About Us</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("LoginCustomer", "Hello")">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="uk-tooltip"></div>
+</body>
